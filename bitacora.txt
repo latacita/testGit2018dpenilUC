@@ -11,4 +11,8 @@
  (03)	commit "Añadidos nombre y
 		apellidos"
 		push
- 
+ (09)	commit "Paso 09"
+ (10)	checkout develop
+ (11)	checkout -b feature/Ticket221
+ (15)	commit "Paso 15"
+ (16)	checkout feature/Ticket221
