@@ -15,8 +15,13 @@
  (06)	branch develop
 		checkout develop
  (07)	checkout -b feature/Ticket220
+ (09)	commit "Paso 09"
+ (10)	checkout develop
+ (11)	checkout -b feature/Ticket221
  (13)	stash
 		checkout feature/Ticket220
+ (15)	commit "Paso 15"
+ (16)	checkout feature/Ticket221
  (17)	editar bitacora.txt
  (18)	commit "Paso 18"
  (19)	checkout develop
