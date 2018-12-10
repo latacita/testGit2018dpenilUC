@@ -11,4 +11,17 @@
  (03)	commit "Añadidos nombre y
 		apellidos"
 		push
- 
+ (05)	commit "Paso 05"
+ (06)	branch develop
+		checkout develop
+ (07)	checkout -b feature/Ticket220
+ (13)	stash
+		checkout feature/Ticket220
+ (17)	editar bitacora.txt
+ (18)	commit "Paso 18"
+ (19)	checkout develop
+ (20)	branch feature/Ticket222
+ (21)	checkout feature/Ticket220
+ (22)								La fusión sería por fast-forward
+									al no haberse realizado cambios en la
+									rama develop desde que se ramificó.
