@@ -13,6 +13,8 @@
 		push
  (05)	commit "Paso 05"
  (06)	branch develop
+		checkout develop
  (07)	checkout -b feature/Ticket220
- 
+ (13)	stash
+		checkout feature/Ticket220
  
