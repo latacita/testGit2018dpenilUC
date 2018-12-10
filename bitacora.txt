@@ -43,3 +43,11 @@
  (30)	push						Se desmarca la opción de "Push all tags".
  (31)	checkout feature/Ticket222
  (32)	checkout bitacora.txt #idcommit
+ (34)	commit -a "Paso 34"
+ (35)	checkout develop
+		merge feature/Ticket222		Se han de resolver conflictos.
+		editar bitacora.txt
+		commit -a
+ (36)	checkout master
+		merge develop				Se fuerza a que sea un merge recursivo.
+ (37)	editar bitacora.txt
