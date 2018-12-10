@@ -8,7 +8,38 @@
 ====== ============================ ================================
  (01)	clone
  (02)	editar bitacora.txt
- (03)	commit "Añadidos nombre y
+ (03)	commit -a "Añadidos nombre y
 		apellidos"
 		push
- 
+ (05)	commit -a "Paso 05"
+ (06)	branch develop
+		checkout develop
+ (07)	checkout -b feature/Ticket220
+ (09)	commit -a "Paso 09"
+ (10)	checkout develop
+ (11)	checkout -b feature/Ticket221
+ (13)	stash
+		checkout feature/Ticket220
+ (15)	commit -a "Paso 15"
+ (16)	checkout feature/Ticket221
+ (17)	stash apply
+		editar bitacora.txt
+ (18)	commit -a "Paso 18"
+ (19)	checkout develop
+ (20)	branch feature/Ticket222
+ (21)	checkout feature/Ticket220
+ (22)								La fusión sería por fast-forward
+									al no haberse realizado cambios en la
+									rama develop desde que se ramificó.
+ (23)	commit -a "Paso 23"
+ (24)	checkout develop
+ (25)	merge feature/Ticket220		Se fuerza a que sea un merge recursivo.
+ (26)	merge feature/Ticket221		Es recursivo por defecto, se deben resolver
+		editar bitacora.txt			conflictos a mano.
+		add bitacora.txt
+		commit -a
+ (28)	commit -a "Paso 28
+ (29)	tag
+ (30)	push						Se desmarca la opción de "Push all tags".
+ (31)	checkout feature/Ticket222
+ (32)	checkout bitacora.txt #idcommit
